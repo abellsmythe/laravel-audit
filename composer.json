@@ -1,0 +1,42 @@
+{
+    "name": "toncho/laravel-audit",
+    "description": "Laravel audit package for your Eloquent models",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alton Bell Smythe",
+            "email": "abellsmythe@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php" : ">=5.5.9",
+        "illuminate/console": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
+        "illuminate/database": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
+        "illuminate/filesystem": "5.2.* || 5.3.* || 5.4.* || 5.5.*",
+        "illuminate/support": "5.2.* || 5.3.* || 5.4.* || 5.5.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.0",
+        "mockery/mockery": "~0.9.4",
+        "orchestra/testbench": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "toncho\\laravel-audit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "toncho\\laravel-audit\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "toncho\\laravel-audit\\ServiceProvider"
+            ]
+        }
+    }
+}
